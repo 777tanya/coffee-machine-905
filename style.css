@@ -1,8 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik:wght@900&display=swap');
+
 .coffee-list {
   background-image: url("img/background.jpg");
   background-size: cover;
 }
 
-.coffe-item img {
+.coffee-item {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 15px 0;
+  border-radius: calc(100px / 2);
+  /*transition: background-color 300ms;*/
+  transition: all 300ms;
+  cursor: pointer;
+}
+.coffee-item img {
   height : 100px;
+  background-color: white;
+  border-radius: 50%;
+}
+.coffee-item span {
+  font-family: 'Rubik', sans-serif;
+  margin-left: 25px;
+  font-size: 20px;
+}
+.coffee-item:hover {
+  background-color: rgba(50, 50, 50, 0.7);
+  transform: scale(1.05);
+}
+.coffee-oper {
+  background-color: rgb(230, 230, 230);
+  padding: 1rem;
+}
+.display {
+  background-color: lightgreen;
+  border: 2px solid darkgreen;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  font-family: 'Rubik', sans-serif;
+}
+.cup-container {
+  margin-top: 2rem;
+}
+.cup {
+  width: 100%;
+}
+.atm {
+  width: 100%;
+}
+.change-container {
+  min-height: 5rem;
+  background-color: lightgrey;
+  border: 2px solid black;
+  border-radius: 0.5rem;
 }
