@@ -14,21 +14,21 @@
     <div class="container">
       <div class="row">
         <div class="col-6 coffee-list d-flex flex-column justify-content-arround">
-          <div class="coffee-item">
+          <div class="coffee-item" onclick="makeCoffee ('Американо', 50)">
             <img src="img/americano.png" alt="Американо">
-            <span>Американо - 50руб</span>
+            <span>Американо - 50руб.</span>
           </div>
-          <div class="coffee-item">
+          <div class="coffee-item" onclick="makeCoffee ('Капучино', 73)">
             <img src="img/cappuccino.png" alt="Капучино">
-            <span>Капучино - 73руб</span>
+            <span>Капучино - 73руб.</span>
           </div>
-          <div class="coffee-item">
+          <div class="coffee-item" onclick="makeCoffee ('Эспрессо', 61)">
             <img src="img/espresso.png" alt="Эспрессо">
-            <span>Эспрессо - 61руб</span>
+            <span>Эспрессо - 61руб.</span>
           </div>
-          <div class="coffee-item">
+          <div class="coffee-item" onclick="makeCoffee ('Латте', 112)">
             <img src="img/latte.jpg" alt="Латте">
-            <span>Латте - 112руб</span>
+            <span>Латте - 112руб.</span>
           </div>
         </div>
        <div class="col-6 coffee-oper">
@@ -63,6 +63,7 @@
   </div>
    </div>
    <!-- Optional JavaScript -->
+   <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
