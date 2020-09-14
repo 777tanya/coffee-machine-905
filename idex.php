@@ -14,19 +14,19 @@
     <div class="container">
       <div class="row">
         <div class="col-6 coffee-list d-flex flex-column justify-content-arround">
-          <div class="coffee-item" onclick="makeCoffee ('Американо', 50)">
+          <div class="coffee-item" onclick="makeCoffee ('Американо', 50, this)">
             <img src="img/americano.png" alt="Американо">
             <span>Американо - 50руб.</span>
           </div>
-          <div class="coffee-item" onclick="makeCoffee ('Капучино', 73)">
+          <div class="coffee-item" onclick="makeCoffee ('Капучино', 73, this)">
             <img src="img/cappuccino.png" alt="Капучино">
             <span>Капучино - 73руб.</span>
           </div>
-          <div class="coffee-item" onclick="makeCoffee ('Эспрессо', 61)">
+          <div class="coffee-item" onclick="makeCoffee ('Эспрессо', 61, this)">
             <img src="img/espresso.png" alt="Эспрессо">
             <span>Эспрессо - 61руб.</span>
           </div>
-          <div class="coffee-item" onclick="makeCoffee ('Латте', 112)">
+          <div class="coffee-item" onclick="makeCoffee ('Латте', 112, this)">
             <img src="img/latte.jpg" alt="Латте">
             <span>Латте - 112руб.</span>
           </div>
@@ -37,7 +37,7 @@
              <div class = "display">
                <p class = "display-test">Выберите кофе</p>
                <div class="progress">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%; transition: name:"></div>
                 </div>
              </div>
              <div class="cup-container">
@@ -62,6 +62,11 @@
   </div>
   </div>
    </div>
+   <div class="money">
+     <img src="img/50rub.jpg" alt=""data-cost="50">
+      <img src="img/100rub.jpg" alt=""data-cost="100">
+      <img src="img/500rub.jpg" alt=""data-cost="500">
+  </div>
    <!-- Optional JavaScript -->
    <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
