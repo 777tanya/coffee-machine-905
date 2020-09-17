@@ -32,9 +32,11 @@ function makeCoffee(name, price, element) {
     let readyPercent = 0;
     let cookingInterval = setInterval(function() {
       readyPercent++;
-      //console.log(readyPercent);
+      console.log(readyPercent);
+    requestAnimationFrame(function() {  
       bigCup.style.opacity = readyPercent + "%";
-      progressBar.style.width = readyPercent + "%"; 
+      progressBar.style.width = readyPercent + "%";
+    })
       changeDisplayText(`Ваш ${name} готовится. ${readyPercent}%`);
       if(readyPercent >= 100) {
         clearInterval(cookingInterval);
